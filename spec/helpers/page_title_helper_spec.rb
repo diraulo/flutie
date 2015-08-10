@@ -17,7 +17,7 @@ describe PageTitleHelper, type: :helper do
   describe "#page_title with content for page title and reversed position" do
     before { helper.content_for(:page_title, 'page title') }
     subject { helper.page_title(:reverse => 1) }
-    it { should == "page title : Dummy" }
+    it { should == "page title : Flutie" }
   end
   describe "#page_title with content for page title and alternate separator" do
     before { helper.content_for(:page_title, 'page title') }
